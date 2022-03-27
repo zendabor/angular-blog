@@ -1,0 +1,17 @@
+<nav class="navbar bg-primary">
+  <h3><a routerLink="/">Admin</a></h3>
+  <ul>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/admin', 'dashboard']">Main</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/admin', 'create']">create post</a>
+    </li>
+    <li >
+      <a href="#" (click)="logOut($event)">exit</a>
+    </li>
+  </ul>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
